@@ -17,11 +17,13 @@
   .card{background:var(--card); border:1px solid #242842; border-radius:12px; padding:16px}
   .row{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
   .pill{display:inline-flex; align-items:center; gap:8px; border:1px solid #2a2f53; background:#121528; color:var(--text); padding:8px 12px; border-radius:999px; font-size:14px}
-  .btn{border:1px solid #2a2f53; background:#121528; color:var(--text); padding:10px 14px; border-radius:10px; cursor:pointer}
+  .btn{border:1px solid #2a2f53; background:#121528; color:var(--text); padding:10px 14px; border-radius:10px; cursor:pointer; display:inline-block}
   .btn:hover{border-color:#3a4180}
   .btn.primary{background:linear-gradient(180deg,#202a55,#1b2550); border-color:#2c3a7a}
   .btn.danger{border-color:#5c2b2b; background:#2a1212}
   .btn.ghost{background:transparent}
+  a.btn{ text-decoration:none; } /* make links look like buttons */
+
   table{width:100%; border-collapse:separate; border-spacing:0 10px}
   thead th{font-weight:600; color:#b7bfd0; text-align:left; font-size:13px; padding:0 10px}
   tbody td{background:#111427; border:1px solid #242842; padding:10px; vertical-align:middle}
@@ -87,6 +89,8 @@
       <button id="addRow" class="btn primary">+ Add Subject</button>
       <button id="clearAll" class="btn danger">Clear All</button>
       <button id="share" class="btn">Share URL</button>
+      <!-- NEW: link to your Marks Needed page -->
+      <a href="https://rudro-kalix.github.io/sem.final-need/" class="btn" rel="noopener">Marks Needed Calculator →</a>
     </div>
   </header>
 
