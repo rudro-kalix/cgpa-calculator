@@ -1,32 +1,38 @@
-# A+ Final Exam Needed Calculator — HTML Single File
+# SGPA Calculator (No Credits, DIU Scale)
 
-The **A+ Final Exam Needed Calculator** is an interactive single‑file web tool for students to figure out how many marks they must score in the **Final (out of 40)** to achieve an **A+ (GPA 5)**.
+A lightweight, single-file SGPA calculator for any number of subjects.  
+- **Letter Grade mode (default)** with DIU mark ranges (A+, A, A− …)  
+- **Grade Point mode** (0–4) if you prefer numeric input  
+- Bold, glowing **SGPA** highlight  
+- Local save (browser storage) + shareable URL  
+- No frameworks. Just **HTML + CSS + vanilla JS**.
+
+## Live Demo (GitHub Pages)
+Enable GitHub Pages (see below). Your app will be live at:  
+`https://<your-username>.github.io/sgpa-calculator-diu/`
 
 ## Features
-- **Attendance by Percentage**: Enter attendance **0–100%**; it automatically converts to **marks out of 7**.
-- Inputs for **Assignment (5)**, **Midterm (25)**, **Quiz Avg (15)**, **Presentation (8, optional)**.
-- **Target Total** defaults to **80** (common A+ cutoff) but can be changed.
-- Clear highlight of **Needed in Final** and warnings if the target is unreachable.
-- Works offline in any modern browser.
+- DIU grading map (A+→4.00, A→3.75, …, F→0.00)
+- Add/remove subjects freely
+- Toggle between **Letter** and **Grade Point**
+- Auto-save to localStorage
+- Shareable state via URL parameter
 
-## Formula
-```
-Needed in Final (out of 40) = Target Total − (Attendance Marks + Assignment + Midterm + Quiz + Presentation)
-Attendance Marks = (Attendance% ÷ 100) × 7
-```
-The result is clamped between **0** and **40**.
+## How to Use
+1. Open the page.
+2. Add subjects (optional names).
+3. Pick **Letter Grades** from dropdowns (or switch to **Grade Points**).
+4. See **SGPA** update instantly.
 
-## Quick Start
-1. Download this repository or the single HTML file.
-2. Open `index.html` in a browser.
-3. Enter your numbers and click **Calculate Needed Final**.
+## Tech
+- **HTML**, **CSS**, **JavaScript (vanilla)**
+- No build tools or dependencies.
 
 ## Deploy to GitHub Pages
-1. Create a new GitHub repo (public).
-2. Upload `index.html` to the root of the repo.
-3. In **Settings → Pages**, choose **Deploy from a branch**, select **main**, and the root folder. Save.
-4. Your calculator will be live at your GitHub Pages URL.
+1. Go to **Settings → Pages**.
+2. Under “Build and deployment”, choose **Deploy from a branch**.
+3. Select branch: `main` and folder: `/ (root)`.
+4. Save. Wait ~30–60 sec for it to publish.
 
----
-
-Made for Bangladeshi university grading systems. Adjust the **Target Total** if your department uses a different A+ cutoff.
+## License
+[MIT](LICENSE)
